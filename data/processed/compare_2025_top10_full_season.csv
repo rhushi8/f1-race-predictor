@@ -1,0 +1,25 @@
+round,gp,pred_p1,actual_p1,p1_hit,top10_hits,top10_hit_rate,pred_top10,actual_top10,error
+1,Australian Grand Prix,ERROR,ERROR,0,0,0.0,,,Input X contains infinity or a value too large for dtype('float64').
+2,Chinese Grand Prix,NOR,PIA,0,6,0.6,"NOR,PIA,RUS,HAM,HAD,LEC,VER,ANT,OCO,TSU","PIA,NOR,RUS,VER,OCO,ANT,ALB,BEA,STR,SAI",
+3,Japanese Grand Prix,NOR,VER,0,9,0.9,"NOR,PIA,RUS,VER,LEC,HAD,HAM,ANT,ALB,GAS","VER,NOR,PIA,LEC,RUS,ANT,HAM,HAD,ALB,BEA",
+4,Bahrain Grand Prix,PIA,PIA,1,7,0.7,"PIA,RUS,NOR,ANT,VER,GAS,SAI,HAM,TSU,HAD","PIA,RUS,NOR,LEC,HAM,VER,GAS,OCO,TSU,BEA",
+5,Saudi Arabian Grand Prix,HAM,PIA,0,9,0.9,"HAM,ANT,PIA,NOR,VER,RUS,SAI,LEC,TSU,ALB","PIA,VER,LEC,NOR,RUS,ANT,HAM,SAI,ALB,HAD",
+6,Miami Grand Prix,VER,PIA,0,9,0.9,"VER,NOR,PIA,ANT,RUS,SAI,ALB,OCO,LEC,TSU","PIA,NOR,RUS,VER,ALB,ANT,LEC,HAM,SAI,TSU",
+7,Emilia Romagna Grand Prix,ERROR,ERROR,0,0,0.0,,,Input X contains infinity or a value too large for dtype('float64').
+8,Monaco Grand Prix,VER,NOR,0,6,0.6,"VER,HAM,ALO,RUS,OCO,NOR,LEC,TSU,ANT,PIA","NOR,LEC,PIA,VER,HAM,HAD,OCO,LAW,ALB,SAI",
+9,Spanish Grand Prix,VER,PIA,0,9,0.9,"VER,PIA,NOR,RUS,ANT,HAM,LEC,GAS,HAD,ALO","PIA,NOR,LEC,RUS,HUL,HAM,HAD,GAS,ALO,VER",
+10,Canadian Grand Prix,ALB,RUS,0,5,0.5,"ALB,PIA,COL,NOR,RUS,VER,ANT,TSU,HAD,OCO","RUS,VER,ANT,PIA,LEC,HAM,ALO,HUL,OCO,SAI",
+11,Austrian Grand Prix,NOR,NOR,1,7,0.7,"NOR,ALO,LEC,RUS,PIA,VER,BEA,HAM,BOR,ANT","NOR,PIA,LEC,HAM,RUS,LAW,ALO,BOR,HUL,OCO",
+12,British Grand Prix,NOR,NOR,1,7,0.7,"NOR,PIA,VER,RUS,HUL,ANT,TSU,ALO,ALB,LEC","NOR,PIA,HUL,HAM,VER,GAS,STR,ALB,ALO,RUS",
+13,Belgian Grand Prix,NOR,PIA,0,8,0.8,"NOR,PIA,VER,TSU,LEC,ALB,RUS,HAD,LAW,BOR","PIA,NOR,LEC,VER,RUS,ALB,HAM,LAW,BOR,GAS",
+14,Hungarian Grand Prix,ERROR,ERROR,0,0,0.0,,,any API: 500 calls/h
+15,Dutch Grand Prix,ERROR,ERROR,0,0,0.0,,,No usable sessions found for 2025 Dutch Grand Prix
+16,Italian Grand Prix,ERROR,ERROR,0,0,0.0,,,No usable sessions found for 2025 Italian Grand Prix
+17,Azerbaijan Grand Prix,ERROR,ERROR,0,0,0.0,,,No usable sessions found for 2025 Azerbaijan Grand Prix
+18,Singapore Grand Prix,PIA,RUS,0,6,0.6,"PIA,SAI,ALB,NOR,OCO,VER,HUL,HAD,ALO,LEC","RUS,VER,NOR,PIA,ANT,LEC,ALO,HAM,BEA,SAI",
+19,United States Grand Prix,ERROR,ERROR,0,0,0.0,,,No usable sessions found for 2025 United States Grand Prix
+20,Mexico City Grand Prix,ERROR,ERROR,0,0,0.0,,,No usable sessions found for 2025 Mexico City Grand Prix
+21,São Paulo Grand Prix,ERROR,ERROR,0,0,0.0,,,No usable sessions found for 2025 São Paulo Grand Prix
+22,Las Vegas Grand Prix,ERROR,ERROR,0,0,0.0,,,No usable sessions found for 2025 Las Vegas Grand Prix
+23,Qatar Grand Prix,ERROR,ERROR,0,0,0.0,,,No usable sessions found for 2025 Qatar Grand Prix
+24,Abu Dhabi Grand Prix,ERROR,ERROR,0,0,0.0,,,No usable sessions found for 2025 Abu Dhabi Grand Prix

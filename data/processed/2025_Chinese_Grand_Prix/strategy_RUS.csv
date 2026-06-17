@@ -1,0 +1,6 @@
+strategy,expected_position,win_prob_pct,podium_prob_pct
+2-stop: S→H→M,9.91,5.0,15.8
+2-stop: S→M→H,9.99,5.1,15.9
+1-stop: M→H,10.11,4.8,14.7
+1-stop: S→H,10.7,4.2,13.2
+1-stop: S→M,12.29,3.0,8.4

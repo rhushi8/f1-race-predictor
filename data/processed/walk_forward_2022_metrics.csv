@@ -1,0 +1,6 @@
+round,gp,mae,rmse,top10_hit,weight
+6,Spanish Grand Prix,4.1,5.873670062235365,0.7,0.0
+7,Monaco Grand Prix,2.7,3.40587727318528,0.9,0.0
+8,Azerbaijan Grand Prix,4.4,6.252999280345393,0.7,0.0
+9,Canadian Grand Prix,4.1,5.531726674375733,0.7,0.0
+10,British Grand Prix,5.7,6.877499545619759,0.7,0.0

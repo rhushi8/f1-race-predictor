@@ -1,0 +1,178 @@
+================================================================================
+F1 PREDICTOR - MANUAL CLEANUP INSTRUCTIONS
+Generated: March 25, 2026
+================================================================================
+
+Follow these steps in order. You can delete items one batch at a time, or all at once.
+⚠️ IMPORTANT: Each item below is 100% safe to delete (verified non-essential code).
+
+================================================================================
+STEP 1: DELETE DEAD CODE FROM src/ DIRECTORY
+================================================================================
+
+🗑️ DELETE: src/tuning/
+   Location: c:\Rhushi\Padhai\f1_predictor\src\tuning
+   What's Inside: 4 Python files (tuner.py, run_full_evaluation.py, walk_forward_backtest.py, calibration_report.py) + __init__.py
+   Why: Never imported/called by train.py or predict.py. Experimental hyperparameter tuning.
+   Size: ~96 KB
+   
+   HOW TO DELETE:
+   - Open File Explorer
+   - Navigate to: c:\Rhushi\Padhai\f1_predictor\src\
+   - Right-click folder "tuning"
+   - Select "Delete" (or press Delete key)
+   - Confirm deletion
+
+🗑️ DELETE: src/scraper/scrape_dashboard.py
+   Location: c:\Rhushi\Padhai\f1_predictor\src\scraper\scrape_dashboard.py
+   Why: Optional monitoring tool, not used by main pipeline
+   Size: ~5 KB
+   
+   HOW TO DELETE:
+   - Open File Explorer
+   - Navigate to: c:\Rhushi\Padhai\f1_predictor\src\scraper\
+   - Right-click file "scrape_dashboard.py"
+   - Select "Delete" (or press Delete key)
+
+================================================================================
+STEP 2: DELETE STALE DATA FROM data/processed/ DIRECTORY
+================================================================================
+
+🗑️ DELETE THESE CALIBRATION/TUNING RESULTS (10 files):
+   Location: c:\Rhushi\Padhai\f1_predictor\data\processed\
+   
+   - walk_forward_2020_calibration_sweep.csv
+   - walk_forward_2020_metrics.csv
+   - walk_forward_2021_calibration_sweep.csv
+   - walk_forward_2021_metrics.csv
+   - walk_forward_2022_calibration_sweep.csv
+   - walk_forward_2022_metrics.csv
+   - walk_forward_2023_calibration_sweep.csv
+   - walk_forward_2023_metrics.csv
+   - walk_forward_2024_calibration_sweep.csv
+   - walk_forward_2024_metrics.csv
+   
+   Why: Only used by deleted src/tuning/walk_forward_backtest.py
+   Total Size: ~3.5 MB
+   
+   HOW TO DELETE:
+   - Open File Explorer
+   - Navigate to: c:\Rhushi\Padhai\f1_predictor\data\processed\
+   - Select all 10 files above (Ctrl+click each one, or type first letter to select)
+   - Right-click → Delete
+
+🗑️ DELETE THESE COMPARISON VERSIONS (3 files):
+   Location: c:\Rhushi\Padhai\f1_predictor\data\processed\
+   
+   - compare_2025_top10_full_season.csv
+   - compare_2025_top10_full_season_v2.csv
+   - compare_2025_top10_full_season_v3.csv
+   
+   Why: Old model comparison snapshots from early 2025, superseded by live dashboard
+   Size: ~150 KB
+   
+   HOW TO DELETE:
+   - Open File Explorer
+   - Navigate to: c:\Rhushi\Padhai\f1_predictor\data\processed\
+   - Select these 3 files
+   - Right-click → Delete
+
+🗑️ DELETE THESE OLD DOCUMENTATION FILES (2 files):
+   Location: c:\Rhushi\Padhai\f1_predictor\data\processed\
+   
+   - v1_2025_model_improvements.md
+   - v1_baseline_2026-03-24.md (OPTIONAL - keep if reference needed)
+   
+   Why: Notes from single model iteration, mostly archival
+   Size: ~10 KB
+   
+   HOW TO DELETE:
+   - Open File Explorer
+   - Navigate to: c:\Rhushi\Padhai\f1_predictor\data\processed\
+   - Select these 2 files
+   - Right-click → Delete
+
+🗑️ DELETE: 2024_Bahrain/ FOLDER
+   Location: c:\Rhushi\Padhai\f1_predictor\data\processed\2024_Bahrain\
+   What's Inside: predictions.csv, strategy_*.csv (old race outputs)
+   Why: Outdated 2024 season predictions, replaced by 2025/2026 predictions
+   Size: ~100 KB
+   
+   HOW TO DELETE:
+   - Open File Explorer
+   - Navigate to: c:\Rhushi\Padhai\f1_predictor\data\processed\
+   - Right-click folder "2024_Bahrain"
+   - Select "Delete"
+
+🗑️ DELETE LOG FILES (if present):
+   Location: c:\Rhushi\Padhai\f1_predictor\data\processed\
+   
+   - scrape.log (if exists)
+   - f1_predictor.log (if exists)
+   
+   Why: Auto-generated logs, not version-controlled data
+   Size: ~300 KB total
+   
+   HOW TO DELETE:
+   - Open File Explorer
+   - Navigate to: c:\Rhushi\Padhai\f1_predictor\data\processed\
+   - Right-click these files (if they exist)
+   - Select "Delete"
+
+================================================================================
+STEP 3: OPTIONAL - DELETE OLD CACHE (If Storage is Critical)
+================================================================================
+
+⚠️ OPTIONAL: data/cache/fastf1/2018/, 2019/, 2020/
+   Location: c:\Rhushi\Padhai\f1_predictor\data\cache\fastf1\
+   Why: Old historical data caches from 2018-2020, if not needed for training
+   Size: ~2 GB (potential, only if deleting all three years)
+   
+   ⚠️ ONLY DELETE IF:
+   - You have recent full data (2021-2025)
+   - Not planning to retrain on 2018-2020 data
+   - Storage is critical priority
+   
+   HOW TO DELETE:
+   - Open File Explorer
+   - Navigate to: c:\Rhushi\Padhai\f1_predictor\data\cache\fastf1\
+   - Right-click folder (2018 OR 2019 OR 2020)
+   - Select "Delete"
+
+================================================================================
+STEP 4: CLEANUP VERIFICATION & DOCUMENTATION
+================================================================================
+
+✅ After deletion, verify:
+   - src/tuning/ is gone
+   - src/scraper/scrape_dashboard.py is gone
+   - data/processed/ no longer has walk_forward_*.csv files
+   - data/processed/ no longer has compare_2025_*.csv (v2, v3 versions)
+   
+🗑️ FINALLY: DELETE THIS FILE (Optional)
+   - CLEANUP_ANALYSIS.md (archive if you want to keep analysis for reference)
+   - CLEANUP_SUMMARY.txt (archive if you want to keep summary for reference)
+   - CLEANUP_INSTRUCTIONS.txt (this file) - delete after done
+
+================================================================================
+SPACE SAVINGS SUMMARY
+================================================================================
+
+After Phase 1 (Code + Tuning Data):  ~5-6 MB freed
+After Phase 2 Optional (2018-2020):  ~2 GB freed (if old caches deleted)
+
+Total potential: ~2 GB freed
+
+BREAKING CHANGES: ZERO ✅
+All production code (train.py, predict.py, dashboard) remains untouched.
+
+================================================================================
+QUESTIONS? 
+================================================================================
+
+If you're unsure about any file:
+- Check data/processed/ for file modification date (older = safer to delete)
+- Reference CLEANUP_ANALYSIS.md for detailed explanation of each item
+- Ask before deleting if in doubt!
+
+Happy cleaning! 🧹

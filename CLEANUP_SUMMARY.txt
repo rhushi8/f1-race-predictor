@@ -1,0 +1,114 @@
+# F1 Predictor Cleanup - Quick Reference
+
+## 🎯 TL;DR - What To Delete Today
+
+### Phase 1: Safe Removals (100% Confidence) - ~5 MB freed
+```
+✅ src/tuning/                           # 4 files, 1.1 MB
+✅ src/scraper/scrape_dashboard.py       # 150 lines
+✅ data/processed/walk_forward_*.csv     # 10 files, 3.5 MB (tuning only)
+✅ data/processed/compare_2025_*.csv     # 4 comparison versions
+✅ data/processed/v1_*.md                # 2 old notes
+✅ data/processed/2024_Bahrain/          # Old race results
+✅ data/processed/*.log                  # Auto-generated logs
+```
+
+### Phase 2: Optional (If Storage Critical) - ~2 GB freed
+```
+⚠️ data/cache/fastf1/2018/               # Old historical cache
+⚠️ data/cache/fastf1/2019/
+⚠️ data/cache/fastf1/2020/
+```
+
+---
+
+## 📊 Detailed Findings
+
+### 1. ENTRY POINTS (These 4 scripts are all that matter)
+- ✅ `scrape_and_build.py` — Data pipeline
+- ✅ `src/predict.py` — Race prediction
+- ✅ `src/train.py` — Model training  
+- ✅ `src/dashboard/app.py` — Web dashboard
+
+### 2. DEAD CODE MODULES (Never Called)
+| Module | Lines | Reason |
+|--------|-------|--------|
+| `src/tuning/tuner.py` | 400 | Experimental hyperparameter tuning (not in train.py) |
+| `src/tuning/run_full_evaluation.py` | 80 | Experimental orchestrator |
+| `src/tuning/walk_forward_backtest.py` | 500 | Out-of-sample validation (experimental) |
+| `src/tuning/calibration_report.py` | 150 | Only called by run_full_evaluation |
+| `src/scraper/scrape_dashboard.py` | 150 | Optional monitoring tool (not in pipeline) |
+
+### 3. STALE DATA FILES
+| File | Created | Why Stale |
+|------|---------|-----------|
+| `walk_forward_*_calibration_sweep.csv` (10 files) | 2023-2024 | Only used by deleted tuning module |
+| `compare_2025_top10_*.csv` (4 versions) | Early 2025 | Experiment snapshots, superseded |
+| `2024_Bahrain/` | 2024 | Old race predictions |
+| `v1_*.md` | 2025 | Old documentation |
+| `*.log` files | Auto | Runtime logs, not version data |
+
+### 4. DATA TO KEEP
+✅ `data/processed/historical_results.csv` — Used by train/predict  
+✅ `data/processed/2025_*_Grand_Prix/` — Current predictions  
+✅ `data/processed/2026_r1_r2_results.csv` — Dashboard calibration  
+✅ `data/cache/fastf1/2021-2025/` — Model training cache  
+✅ `models/ensemble.pkl` — Active model  
+
+---
+
+## 🔍 Analysis Confidence
+
+| Finding | Confidence | Evidence |
+|---------|------------|----------|
+| Tuning module is dead | ✅ 99% | Zero imports from entry points; not called by train.py |
+| Walk-forward sweeps are unused | ✅ 99% | Only referenced in deleted run_full_evaluation.py |
+| Comparison CSVs are stale | ✅ 95% | No code references them; superseded by 2026 dashboard |
+| Scrape_dashboard is optional | ✅ 90% | Never imported; secondary monitoring tool |
+
+---
+
+## ⚠️ Risk Assessment
+
+**Zero Breaking Changes Expected** when executing Phase 1 cleanup.
+
+- ✅ Training pipeline unaffected (train.py doesn't import tuning)
+- ✅ Prediction pipeline unaffected (predict.py doesn't use tuning)
+- ✅ Dashboard unaffected (only reads processed/2026 files)
+- ✅ Scraping unaffected (scrape_dashboard is optional monitor)
+
+---
+
+## 🗂️ File Deletion Order (Recommended)
+
+**1. Remove Code First**
+```powershell
+Remove-Item -Recurse -Force "src/tuning"
+Remove-Item -Force "src/scraper/scrape_dashboard.py"
+```
+
+**2. Remove Data**
+```powershell
+Remove-Item -Force "data/processed/walk_forward*.csv"
+Remove-Item -Force "data/processed/compare_2025*.csv"
+Remove-Item -Force "data/processed/v1_*.md"
+Remove-Item -Recurse -Force "data/processed/2024_Bahrain"
+Remove-Item -Force "data/processed/*.log"
+```
+
+**3. Test Pipeline** (run a quick train/predict to verify nothing broke)
+
+**4. Optional: Archive Old Cache** (2018-2020)
+
+---
+
+## 📈 Space Savings
+
+- **Phase 1:** ~5-6 MB (code + tuning artifacts)
+- **Phase 1+2:** ~2 GB (with old cache removal)
+
+Not huge, but cleans up experimental/dead code clutter.
+
+---
+
+**See [CLEANUP_ANALYSIS.md](CLEANUP_ANALYSIS.md) for detailed rationale & validation checklist.**

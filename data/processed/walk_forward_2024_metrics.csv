@@ -1,0 +1,20 @@
+round,gp,mae,rmse,top10_hit,weight
+6,Miami Grand Prix,2.8,3.5071355833500366,0.7,0.0
+7,Emilia Romagna Grand Prix,2.2,2.7748873851023217,0.8,0.0
+8,Monaco Grand Prix,1.9,3.1144823004794873,1.0,0.0
+9,Canadian Grand Prix,4.1,4.857983120596447,0.8,0.0
+10,Spanish Grand Prix,1.1,1.5491933384829668,1.0,0.0
+11,Austrian Grand Prix,3.1,4.795831523312719,0.7,0.0
+12,British Grand Prix,2.5,4.538722287164087,0.9,0.0
+13,Hungarian Grand Prix,2.4,3.4351128074635335,0.8,0.0
+14,Belgian Grand Prix,2.6,3.714835124201342,0.9,0.0
+15,Dutch Grand Prix,2.5414305252721165,3.087771003245945,0.8,0.0
+16,Italian Grand Prix,2.1,2.8460498941515415,0.9,0.0
+17,Azerbaijan Grand Prix,4.3,6.0909769331364245,0.8,0.0
+18,Singapore Grand Prix,2.2,3.0166206257996713,0.9,0.0
+19,United States Grand Prix,2.0,2.8284271247461903,0.8,0.0
+20,Mexico City Grand Prix,3.4,4.571651780264984,0.9,0.0
+21,São Paulo Grand Prix,4.5,5.735852159879995,0.7,0.0
+22,Las Vegas Grand Prix,2.5,4.483302354291979,0.9,0.0
+23,Qatar Grand Prix,2.5,3.391164991562634,0.8,0.0
+24,Abu Dhabi Grand Prix,3.6,5.138093031466052,0.9,0.0

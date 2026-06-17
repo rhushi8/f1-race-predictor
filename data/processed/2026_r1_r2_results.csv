@@ -1,0 +1,45 @@
+season,race_round,race,driver,driver_name,constructor,grid_position,finish_position,points
+2026,1,Australian Grand Prix,RUS,George Russell,Mercedes,1,1,25.0
+2026,1,Australian Grand Prix,ANT,Andrea Kimi Antonelli,Mercedes,2,2,18.0
+2026,1,Australian Grand Prix,LEC,Charles Leclerc,Ferrari,4,3,15.0
+2026,1,Australian Grand Prix,HAM,Lewis Hamilton,Ferrari,7,4,12.0
+2026,1,Australian Grand Prix,NOR,Lando Norris,McLaren,6,5,10.0
+2026,1,Australian Grand Prix,VER,Max Verstappen,Red Bull,20,6,8.0
+2026,1,Australian Grand Prix,BEA,Oliver Bearman,Haas F1 Team,12,7,6.0
+2026,1,Australian Grand Prix,LIN,Arvid Lindblad,RB F1 Team,9,8,4.0
+2026,1,Australian Grand Prix,BOR,Gabriel Bortoleto,Audi,10,9,2.0
+2026,1,Australian Grand Prix,GAS,Pierre Gasly,Alpine F1 Team,14,10,1.0
+2026,1,Australian Grand Prix,OCO,Esteban Ocon,Haas F1 Team,13,11,0.0
+2026,1,Australian Grand Prix,ALB,Alexander Albon,Williams,15,12,0.0
+2026,1,Australian Grand Prix,LAW,Liam Lawson,RB F1 Team,8,13,0.0
+2026,1,Australian Grand Prix,COL,Franco Colapinto,Alpine F1 Team,16,14,0.0
+2026,1,Australian Grand Prix,SAI,Carlos Sainz,Williams,21,15,0.0
+2026,1,Australian Grand Prix,PER,Sergio Pérez,Cadillac F1 Team,18,16,0.0
+2026,1,Australian Grand Prix,STR,Lance Stroll,Aston Martin,22,17,0.0
+2026,1,Australian Grand Prix,ALO,Fernando Alonso,Aston Martin,17,18,0.0
+2026,1,Australian Grand Prix,BOT,Valtteri Bottas,Cadillac F1 Team,19,19,0.0
+2026,1,Australian Grand Prix,HAD,Isack Hadjar,Red Bull,3,20,0.0
+2026,1,Australian Grand Prix,PIA,Oscar Piastri,McLaren,5,21,0.0
+2026,1,Australian Grand Prix,HUL,Nico Hülkenberg,Audi,11,22,0.0
+2026,2,Chinese Grand Prix,ANT,Andrea Kimi Antonelli,Mercedes,1,1,25.0
+2026,2,Chinese Grand Prix,RUS,George Russell,Mercedes,2,2,18.0
+2026,2,Chinese Grand Prix,HAM,Lewis Hamilton,Ferrari,3,3,15.0
+2026,2,Chinese Grand Prix,LEC,Charles Leclerc,Ferrari,4,4,12.0
+2026,2,Chinese Grand Prix,BEA,Oliver Bearman,Haas F1 Team,10,5,10.0
+2026,2,Chinese Grand Prix,GAS,Pierre Gasly,Alpine F1 Team,7,6,8.0
+2026,2,Chinese Grand Prix,LAW,Liam Lawson,RB F1 Team,14,7,6.0
+2026,2,Chinese Grand Prix,HAD,Isack Hadjar,Red Bull,9,8,4.0
+2026,2,Chinese Grand Prix,SAI,Carlos Sainz,Williams,17,9,2.0
+2026,2,Chinese Grand Prix,COL,Franco Colapinto,Alpine F1 Team,12,10,1.0
+2026,2,Chinese Grand Prix,HUL,Nico Hülkenberg,Audi,11,11,0.0
+2026,2,Chinese Grand Prix,LIN,Arvid Lindblad,RB F1 Team,15,12,0.0
+2026,2,Chinese Grand Prix,BOT,Valtteri Bottas,Cadillac F1 Team,19,13,0.0
+2026,2,Chinese Grand Prix,OCO,Esteban Ocon,Haas F1 Team,13,14,0.0
+2026,2,Chinese Grand Prix,PER,Sergio Pérez,Cadillac F1 Team,21,15,0.0
+2026,2,Chinese Grand Prix,VER,Max Verstappen,Red Bull,8,16,0.0
+2026,2,Chinese Grand Prix,ALO,Fernando Alonso,Aston Martin,18,17,0.0
+2026,2,Chinese Grand Prix,STR,Lance Stroll,Aston Martin,20,18,0.0
+2026,2,Chinese Grand Prix,PIA,Oscar Piastri,McLaren,5,19,0.0
+2026,2,Chinese Grand Prix,NOR,Lando Norris,McLaren,6,20,0.0
+2026,2,Chinese Grand Prix,BOR,Gabriel Bortoleto,Audi,16,21,0.0
+2026,2,Chinese Grand Prix,ALB,Alexander Albon,Williams,22,22,0.0
