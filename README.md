@@ -2,8 +2,8 @@
 
 Forecast a Formula 1 race **before it happens** — not as a single predicted finishing order, but as win / podium / points **probabilities** with confidence intervals, produced by a machine-learning ensemble feeding a **10,000-run Monte Carlo simulation**.
 
-## Why this exists
-A race outcome isn't deterministic: pace, tire wear, pit timing, safety cars, and DNFs all inject randomness, so a single predicted order hides the uncertainty that matters. This system models that randomness explicitly — and validates itself only on races it never trained on.
+## Problem Statement
+A Formula 1 race outcome is inherently stochastic — pace, tire degradation, pit-stop timing, safety cars, and DNFs all introduce randomness — so a single predicted finishing order misrepresents the result by hiding that uncertainty. Models that look accurate in-sample also tend to fail on unseen races. The problem this project addresses: forecast race outcomes as calibrated probabilities with explicit uncertainty, validated strictly on races outside the training window.
 
 ## Key features
 - **Multi-source data** — qualifying, practice telemetry, tire data, and weather from **FastF1**; stints, pit stops, and live timing from **OpenF1**.
