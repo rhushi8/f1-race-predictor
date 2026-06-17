@@ -14,3 +14,7 @@ data/cache/
 *.log
 .DS_Store
 Thumbs.db
+data/raw/
+CLEANUP_*
+CODE_REVIEW.md
+docs/part_10_*
